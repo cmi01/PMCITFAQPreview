@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PMC IT Help Desk | Frequently Asked Questions (FAQ)</title>
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Inline CSS Styles -->
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply general styles to the body */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        /* Top Banner */
+        .top-banner {
+            width: 100%;
+            background-color: #1F3A93;
+            padding: 2vh 0;
+            text-align: center;
+        }
+
+        .top-banner h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+
+        /* Main Container */
+        .main-container {
+            display: flex;
+            width: 100%;
+            min-height: 80vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background-color: #34495E;
+            padding-top: 20px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        .sidebar ul li a:hover,
+        .sidebar ul li a.active {
+            background-color: #1F3A93;
+            color: #ffffff;
+        }
+
+        /* Content Area */
+        .content-area {
+            margin-left: 250px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        .content-section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+
+        .section-content h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            color: #34495E;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .section-content p,
+        .section-content ul {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.1rem;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .section-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .section-content li {
+            margin-bottom: 10px;
+        }
+
+        /* Link styles */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: #0056b3;
+        }
+
+        /* Bold text */
+        strong {
+            font-weight: bold;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .sidebar ul li {
+                margin: 5px;
+            }
+
+            .sidebar ul li a {
+                padding: 10px 15px;
+            }
+
+            .content-area {
+                margin-left: 0;
+            }
+
+            .top-banner h1 {
+                font-size: 2rem;
+            }
+
+            .content-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .section-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .section-content p,
+            .section-content ul {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <h1>PMC IT Help Desk | Frequently Asked Questions (FAQ)</h1>
+    </div>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#blackboard" class="active">Blackboard</a></li>
+                <li><a href="#it-services">IT Services</a></li>
+                <li><a href="#non-it-systems">Non-IT Systems</a></li>
+                <li><a href="#email-office">School Email & Microsoft Office</a></li>
+                <li><a href="#sis">Student Information System (SIS)</a></li>
+                <li><a href="#contact">Contact and Help Requests</a></li>
+            </ul>
+        </nav>
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Blackboard Section -->
+            <section id="blackboard" class="content-section active">
+                <h2>Blackboard</h2>
+                <div class="section-content">
+                    <h3>What is Blackboard?</h3>
+                    <p>Blackboard is an online learning system used for all your courses at Pierce Mortuary Colleges.</p>
+
+                    <h3>How do I access Blackboard?</h3>
+                    <p>You can access your courses on Blackboard at <a href="https://pierce.blackboard.com">pierce.blackboard.com</a>. You'll need to enter the username and password provided by IT.</p>
+
+                    <h3>I can’t log in to Blackboard.</h3>
+                    <p>Click on <a href="https://pierce.blackboard.com/reset">this link</a> to reset your Blackboard password. If you still can’t log in, please submit a help request <a href="https://forms.office.com/r/0xc4r8eZyE">here</a>. We can reset your password for you. If your account is suspended, we will let you know, and you will need to call the school to ask to be reinstated.</p>
+
+                    <h3>I want to change my Blackboard password.</h3>
+                    <p>After logging into Blackboard, click on your name on the left-hand side of the screen. Choose ‘Password Reset’ from the menu.</p>
+
+                    <h3>I'm missing a course in Blackboard.</h3>
+                    <p>If your courses don’t appear by the start of your term, email <a href="mailto:AcademicOutreach@pierce.edu">AcademicOutreach@pierce.edu</a>.</p>
+
+                    <h3>I'm having a problem in a Blackboard course.</h3>
+                    <p>For issues within a Blackboard course, email <a href="mailto:AcademicOutreach@pierce.edu">AcademicOutreach@pierce.edu</a>.</p>
+                </div>
+            </section>
+            <!-- IT Services Section -->
+            <section id="it-services" class="content-section">
+                <h2>IT Services</h2>
+                <div class="section-content">
+                    <h3>Who can help me with computer issues?</h3>
+                    <p>Each college campus has an on-site IT support specialist to help with technical issues and requests. You can submit a help request <a href="https://forms.office.com/r/0xc4r8eZyE">here</a>.</p>
+
+                    <h3>What does IT help with?</h3>
+                    <p>IT can assist you with school-provided computers, websites, and accounts with few exceptions.</p>
+
+                    <h3>How do I send a help request?</h3>
+                    <p>To get help from IT, please submit a request <a href="https://forms.office.com/r/0xc4r8eZyE">here</a>. You can find the same link under ‘Quick Links’ on your college’s website.</p>
+
+                    <h3>The help request form isn’t working.</h3>
+                    <p>Please give us a call at <strong>(888) 256-1427</strong>.</p>
+                </div>
+            </section>
+            <!-- Non-IT Systems Section -->
+            <section id="non-it-systems" class="content-section">
+                <h2>Non-IT Systems</h2>
+                <div class="section-content">
+                    <h3>Cengage Support:</h3>
+                    <ul>
+                        <li><strong>Account Creation Guide:</strong> <a href="https://help.cengage.com/sam/sysreq/create-acct.html">Create an Account</a></li>
+                        <li><strong>Expert Support Phone:</strong> (800) 354-9706</li>
+                    </ul>
+
+                    <h3>McGraw Hill Connect Support:</h3>
+                    <ul>
+                        <li><strong>Support Page:</strong> <a href="https://mhedu.force.com/CXG/s/RegistrationAccess?dc=Registration_Access">Registration Access</a></li>
+                        <li><strong>Phone:</strong> (800) 331-5094</li>
+                    </ul>
+
+                    <h3>Respondus LockDown Browser:</h3>
+                    <ul>
+                        <li><strong>Support Page:</strong> <a href="https://web.respondus.com/support/">Respondus Support</a></li>
+                        <li><strong>Open a Support Ticket:</strong> <a href="https://support.respondus.com/hc/en-us/requests/new">Submit a Ticket</a></li>
+                        <li><strong>Download Link:</strong> <a href="https://download.respondus.com/lockdown/download.php?id=704072987">Download Browser</a></li>
+                    </ul>
+
+                    <h3>Honorlock Support:</h3>
+                    <ul>
+                        <li><strong>Support Page:</strong> <a href="https://honorlock.com/support/">Honorlock Support</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:support@honorlock.com">support@honorlock.com</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- School Email & Microsoft Office Section -->
+            <section id="email-office" class="content-section">
+                <h2>School Email & Microsoft Office</h2>
+                <div class="section-content">
+                    <h3>Why do I need a school email?</h3>
+                    <p>Your school email is used for communications between you and the school. We recommend checking it regularly to avoid missing important updates. Your other account credentials will be sent to your school email.</p>
+
+                    <h3>Where is my school email?</h3>
+                    <p>You can access your school email by logging in at <a href="https://www.office.com">office.com</a> and clicking on the blue Outlook icon on the left-hand side of the screen. You'll need to enter the username and password provided by IT.</p>
+
+                    <h3>How do I access Teams, Word, etc.?</h3>
+                    <p>You can access other Microsoft Office apps by logging into <a href="https://www.office.com">office.com</a> and clicking on the respective app icons on the left-hand side of the screen.</p>
+
+                    <h3>I forgot my email password.</h3>
+                    <p>You can reset your email password with <a href="https://passwordreset.microsoftonline.com/">this link</a>. Please make sure your password is at least 8 characters long and includes a number and a symbol like <code>$</code> or <code>#</code>.</p>
+
+                    <h3>I can’t reset my password.</h3>
+                    <p>Please submit a help request explaining the issue, and we will assist you. Submit your request <a href="https://forms.office.com/r/0xc4r8eZyE">here</a>.</p>
+
+                    <h3>My Microsoft Office apps aren’t working.</h3>
+                    <p>Ensure you are using Microsoft Office apps (Teams, Word, Outlook, etc.) on Google Chrome or Firefox browsers on a Windows or Mac/Apple computer or laptop. If they still aren’t working, submit a help request <a href="https://forms.office.com/r/0xc4r8eZyE">here</a>.</p>
+
+                    <h3>What is MFA?</h3>
+                    <p>MFA or Multi-Factor Authentication is a security feature that protects your personal information. It requires you to verify your identity when logging in to prevent unauthorized access.</p>
+
+                    <h3>How do I use MFA?</h3>
+                    <p>You will be guided through the setup for Multi-Factor Authentication when you first log in to your Microsoft Office account. Once every 30 days, Microsoft will send you a verification code when you log in.</p>
+                </div>
+            </section>
+            <!-- Student Information System (SIS) Section -->
+            <section id="sis" class="content-section">
+                <h2>Student Information System (SIS)</h2>
+                <div class="section-content">
+                    <h3>How do I access SIS?</h3>
+                    <p>You can access your SIS account at <a href="https://pierce.orbund.com">pierce.orbund.com</a>. Use the username and password that IT sent to your school email.</p>
+                    <ul>
+                        <li><strong>Students:</strong> Select ‘Student’ as your role to log in.</li>
+                        <li><strong>Faculty:</strong> Select ‘Instructor’ as your role.</li>
+                    </ul>
+
+                    <h3>Can I change my SIS password?</h3>
+                    <p>Yes. After logging in, click on ‘Setup and Customization’ on the bottom left of the menu. Then click ‘Account and Profile’ and enter a new password. Click on the ‘Save’ button at the bottom of the screen to save your new password.</p>
+
+                    <h3>I can’t log in to SIS / "Authentication Failed".</h3>
+                    <p>Click on <a href="https://pierce.orbund.com/passwordreset">this link</a> to reset your SIS password. If you still can’t log in, please submit an IT help request <a href="https://forms.office.com/r/0xc4r8eZyE">here</a>, and we will provide new credentials.</p>
+
+                    <h3>I have an issue within the SIS.</h3>
+                    <p>If you experience an issue with content in SIS, please email your school’s Dean of Academics:</p>
+                    <ul>
+                        <li><strong>Dallas Institute – Erin Wilson:</strong> <a href="mailto:erinwilson@dallasinstitute.edu">erinwilson@dallasinstitute.edu</a></li>
+                        <li><strong>Gupton-Jones – Candice Chatman:</strong> <a href="mailto:cchatman@gupton-jones.edu">cchatman@gupton-jones.edu</a></li>
+                        <li><strong>Mid-America – Paul Eubanks:</strong> <a href="mailto:peubanks@mid-america.edu">peubanks@mid-america.edu</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Contact and Help Requests Section -->
+            <section id="contact" class="content-section">
+                <h2>Contact and Help Requests</h2>
+                <div class="section-content">
+                    <h3>If you encounter any issues not covered here or need further assistance:</h3>
+                    <p><strong>Submit a Help Request:</strong> <a href="https://forms.office.com/r/0xc4r8eZyE">Help Request Form</a></p>
+
+                    <h3>For non-computer issues or academic questions, contact your campus directly:</h3>
+                    <p><strong>Dallas Institute:</strong> <a href="mailto:info@dallasinstitute.edu">info@dallasinstitute.edu</a></p>
+                    <p><strong>Gupton-Jones:</strong> <a href="mailto:info@gupton-jones.edu">info@gupton-jones.edu</a></p>
+                    <p><strong>Mid-America:</strong> <a href="mailto:info@mid-america.edu">info@mid-america.edu</a></p>
+
+                    <h3>I don't see my computer problem on any of these lists.</h3>
+                    <p>Click on <a href="https://forms.office.com/r/0xc4r8eZyE">this link</a> to send us a help request. If you cannot submit a request, give us a call at <strong>(888) 256-1427</strong>.</p>
+
+                    <h3>I have an academic/non-computer question or issue.</h3>
+                    <h3>Click one of the links below to contact your campus:</h3>
+                    <p><a href="https://dallasinstitute.edu/contact">➔ Contact Dallas Institute</a></p>
+                    <p><a href="https://gupton-jones.edu/contact">➔ Contact Gupton-Jones</a></p>
+                    <p><a href="https://mid-america.edu/">➔ Contact Mid-America</a></p>
+
+                    <p><em>Please make sure to check your school email regularly for important updates and communications.</em></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- Inline JavaScript for Interactivity -->
+    <script>
+        // Get all sidebar links and content sections
+        const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+        const contentSections = document.querySelectorAll('.content-section');
+
+        // Function to remove 'active' class from all links and sections
+        function removeActiveClasses() {
+            sidebarLinks.forEach(link => link.classList.remove('active'));
+            contentSections.forEach(section => section.classList.remove('active'));
+        }
+
+        // Add click event listeners to sidebar links
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                removeActiveClasses();
+                link.classList.add('active');
+                targetSection.classList.add('active');
+
+                // Scroll to top of content area
+                document.querySelector('.content-area').scrollTo(0, 0);
+            });
+        });
+    </script>
+</body>
+</html>
